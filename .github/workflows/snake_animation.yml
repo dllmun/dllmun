@@ -49,8 +49,8 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
-      - name: Show build status
-        run: git status
+      # - name: Show build status
+      #   run: git status
 
       - name: Push new files to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
