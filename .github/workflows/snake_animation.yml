@@ -19,13 +19,14 @@ on:
 jobs:
   # It contains a single job called "build".
   build:
+    permissions:
+      contents: write
     # The type of runner the job will run on.
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     # Steps represent a sequence of tasks that will be executed as part of the job.
     steps:
-      - name: Clone repository
-        uses: actions/checkout@v3
 
       - name: Generate snake files in './dist/'
         uses: Platane/snk@v3
